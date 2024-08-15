@@ -1,0 +1,2 @@
+require("configuration")
+print("hello")
