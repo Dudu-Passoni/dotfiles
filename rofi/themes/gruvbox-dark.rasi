@@ -13,7 +13,7 @@
 
 * {
     /* Theme settings */
-    highlight: bold italic;
+    highlight: bold;
     scrollbar: true;
 
     /* Gruvbox dark colors */
@@ -27,12 +27,13 @@
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
     gruvbox-dark-gray:         #a89984;
+    gruvbox-dark-cream:        #fff4d2;
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;
     background-color:            @background;
-    foreground:                  @gruvbox-dark-fg1;
-    border-color:                @gruvbox-dark-gray;
+    foreground:                  @gruvbox-dark-fg0;
+    border-color:                @gruvbox-dark-red-dark;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
@@ -57,6 +58,4 @@
     selected-urgent-background:  @gruvbox-dark-red-light;
     selected-urgent-foreground:  @urgent-foreground;
 }
-
-@import "gruvbox-common.rasi"
 

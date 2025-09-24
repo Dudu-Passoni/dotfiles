@@ -1,0 +1,112 @@
+/*
+ * Rofi 2.0 theme
+ * based on the Gruvbox color palette
+ */
+
+* {
+    highlight: bold;
+    scrollbar: true;
+
+    /* Gruvbox colors */
+    gruvbox-bg:                  #282828;
+    gruvbox-bg-alt:              #3c3836;
+    gruvbox-fg:                  #ebdbb2;
+    gruvbox-red:                 #cc241d;
+    gruvbox-green:               #98971a;
+    gruvbox-yellow:              #fabd2f;
+    gruvbox-blue:                #458588;
+    gruvbox-magenta:             #b16286;
+    gruvbox-cyan:                #689d6a;
+    gruvbox-gray:                #a89984;
+    gruvbox-cream:               #fff4d2;
+    gruvbox-white:               #FFFFFF;
+
+    /* Theme-specific variables */
+    background-color:                 @gruvbox-bg-alt;
+    border-color:                     @gruvbox-cream;
+    foreground-color:                 @gruvbox-fg;
+    active-background:                @gruvbox-bg;
+    active-foreground:                @gruvbox-cream;
+    urgent-background:                @gruvbox-red;
+    urgent-foreground:                @gruvbox-bg;
+    separatorcolor:              @border-color;
+    scrollbar-handle:            @border-color;
+}
+
+window {
+    background-color: @background-color;
+    border:           1;
+    padding:          10px;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+}
+
+message {
+    border:       2px 0px 0px;
+    border-color: @border-color;
+    padding:      1px;
+}
+
+textbox {
+    text-color: @foreground-color;
+}
+
+listview {
+    border:       0px 0px 0px;
+    border-color: @border-color;
+    spacing:      2px;
+    scrollbar:    false;
+    padding:      2px 0px;
+}
+
+element {
+    background-color: @background-color;
+    padding:          2px 5px;
+    text-color:       @foreground-color;
+    border:           0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+inputbar {
+    spacing: 0;
+    text-color: @foreground-color;
+    padding: 1px;
+    background-color: transparent;
+}
+
+element.normal.normal {
+    background-color: @background-color;
+    text-color:       @foreground-color;
+}
+
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+
+element.selected.normal {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+
+element.selected.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+
+element.selected.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}

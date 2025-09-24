@@ -1,2 +1,7 @@
 
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+configuration {
+    sidebar-mode: false;
+}
+
+@theme "/home/Dudu/.config/rofi/themes/tema.rasi"
